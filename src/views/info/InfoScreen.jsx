@@ -40,12 +40,12 @@ const InfoScreen = ({ item, toggleModal }) => {
                     subTitle={item?.phone}
                     icon={'phone'}
                     onPress={() => {
-                        Linking.canOpenURL(item?.phone)
+                        Linking.canOpenURL(`tel:${item?.phone}`)
                             .then(supported => {
                                 if (!supported) {
                                     Alert.alert('Phone not support call');
                                 } else {
-                                    return Linking.openURL(item?.phone);
+                                    return Linking.openURL(`tel:${item?.phone}`);
                                 }
                             })
                     }}

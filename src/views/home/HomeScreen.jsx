@@ -229,6 +229,7 @@ const HomeScreen = ({ navigation }) => {
                     backdropPressToClose={false}
                     position='center'
                     noHandle
+                    entry={'top'}
                     style={{
                         width: 100,
                         height: 100,
@@ -240,7 +241,7 @@ const HomeScreen = ({ navigation }) => {
                         justifyContent: 'center',
                         alignItems: 'center',
                     }}>
-                        <ActivityIndicator size={'large'} />
+                        <ActivityIndicator size={'large'} color='#eb443b' />
                     </View>
                 </Modal>
             </Portal>

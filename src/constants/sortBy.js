@@ -8,7 +8,7 @@ export default [
         value: 'rating',
     },
     {
-        label: 'Review Count',
+        label: 'Review',
         value: 'review_count',
     },
     {

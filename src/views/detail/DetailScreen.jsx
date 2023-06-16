@@ -61,7 +61,7 @@ const DetailScreen = ({ route, navigation }) => {
             justifyContent: 'center',
             flex: 1,
         }}>
-            <ActivityIndicator size={'large'} />
+            <ActivityIndicator size={'large'} color='#eb443b' />
         </View>
     }
 
